@@ -13,7 +13,7 @@ class WallService {
         for ((index, posts) in postsArray.withIndex()) {
             if (post.id == posts.id) {
                 postsArray[index] = post.copy(
-                        id = posts.id,
+                        ownerId = posts.ownerId,
                         date = posts.date
                 )
                 return true
